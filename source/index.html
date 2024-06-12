@@ -9,7 +9,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header" data-test="header">
       <div class="header__wrapper container">
         <a class="header__logo" href="index.html" aria-current="page">
           <picture>
@@ -31,6 +31,11 @@
               <a class="user-menu__link" href="404.html">
                 <span class="visually-hidden">Корзина</span>
               </a>
+            </li>
+            <li class="user-menu__item">
+              <button class="user-menu__burger js-toggle-button" type="button">
+                <span class="visually-hidden">Открыть меню сайта</span>
+              </button>
             </li>
           </ul>
           <ul class="main-nav__site-menu site-menu">
@@ -59,28 +64,103 @@
       </div>
     </header>
     <main class="main-index">
-      <h1 class="main-index__title">Магазин кофейных напитков 'Drink2Go'.</h1>
-      <section class="promo">
-        <div class="promo__wrapper container">
-          <!-- промо-блок со слайдером -->
+      <h1 class="visually-hidden">Магазин кофейных напитков 'Drink2Go'.</h1>
+      <section class="hero" data-test="hero">
+        <div class="hero__wrapper container">
+          <div class="hero__slider slider">
+            <button class="slider__prev-button slider-button-prev" type="button">
+              <span class="visually-hidden">Предыдущее предложение</span>
+            </button>
+            <div class="slider__current-slide">
+              <div class="slider__pic-wrapper">
+                <picture>
+                  <!-- добавить промо-банку!!левые картинки и размеры!! -->
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/main-preview_l@1x.webp 1x, images/main-preview_l@2x.webp 2x" width="552" height="499">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/main-preview_m@1x.webp 1x, images/main-preview_m@2x.webp 2x" width="709" height="609">
+                  <source type="image/webp" srcset="images/main-preview_s@1x.webp 1x, images/main-preview_s@2x.webp 2x"
+                  width="280" height="270">
+                  <source type="image/png" media="(min-width: 1440px)"
+                  srcset="images/main-preview_l@1x.png 1x, images/main-preview_l@2x.png 2x" width="552" height="499">
+                  <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/main-preview_m@1x.png 1x, images/main-preview_m@2x.png 2x" width="709" height="609">
+                  <img class="hero__pic" src="images/main-preview_s@1x.png" srcset="images/main-preview_s@2x.png 2x" width="280"
+                  height="270" alt="'Cat Energy Pro' с курицей.">
+                </picture>
+              </div>
+              <div class="slider__text-wrapper">
+                <p class="slider__label-new">
+                  <strong>Новинка!</strong>
+                </p>
+                <h2 class="slider__slide-title">Декаф Флэт Уайт</h2>
+                <p class="slider__slide-description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <dl class="slider__slide-prices">
+                  <div class="slider__regular-price">
+                    <dt class="visually-hidden">Цена без скидки</dt>
+                    <dd class="slider__regular-price-value">295₽</dd>
+                  </div>
+                  <div class="slider__special-price">
+                    <dt class="visually-hidden">Цена сегодня</dt>
+                    <dd class="slider__special-price-value">225₽</dd>
+                  </div>
+                </dl>
+                <a class="slider__slide-order-button" href="404.html">Заказать</a>
+              </div>
+            </div>
+            <button class="slider__next-button slider-button-next" type="button">
+              <span class="visually-hidden">Следующее предложение</span>
+            </button>
+            <ol class="slider__pagination-list slider-pagination">
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button">
+                  <span class="visually-hidden">Предложение №1</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button">
+                  <span class="visually-hidden">Предложение №2</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button">
+                  <span class="visually-hidden">Предложение №3</span>
+                </button>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
-      <section class="features">
+      <section class="features" data-test="features">
         <div class="features__wrapper container">
           <!-- список преимуществ -->
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <div class="catalog__wrapper container">
           <!-- фильтры -->
           <!-- каталог товаров -->
         </div>
       </section>
-      <section class="map">
-        <!-- пикча с картой -->
+      <section class="map" data-test="map">
+        <picture>
+          <!-- добавить карту!!левые картинки и размеры!! -->
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="images/main-preview_l@1x.webp 1x, images/main-preview_l@2x.webp 2x" width="552" height="499">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="images/main-preview_m@1x.webp 1x, images/main-preview_m@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" srcset="images/main-preview_s@1x.webp 1x, images/main-preview_s@2x.webp 2x"
+            width="280" height="270">
+          <source type="image/png" media="(min-width: 1440px)"
+            srcset="images/main-preview_l@1x.png 1x, images/main-preview_l@2x.png 2x" width="552" height="499">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="images/main-preview_m@1x.png 1x, images/main-preview_m@2x.png 2x" width="709" height="609">
+          <img class="hero__pic" src="images/main-preview_s@1x.png" srcset="images/main-preview_s@2x.png 2x" width="280"
+            height="270" alt="'Cat Energy Pro' с курицей.">
+        </picture>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <div class="footer__wrapper container">
         <div class="footer__base-wrapper">
           <a class="fotter__logo" href="index.html" aria-current="page">
