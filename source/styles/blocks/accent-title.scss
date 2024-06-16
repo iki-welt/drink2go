@@ -1,0 +1,6 @@
+.accent-title {
+  color: $base-primary-color;
+  text-transform: uppercase;
+
+  @include font-set(700, 12px, 16px);
+}
