@@ -5,6 +5,7 @@
   color: $base-white;
   text-align: center;
   background-color: $base-primary-color;
+  border: none;
   border-radius: 4px;
   @include font-set(400, 16px, 24px);
 }
