@@ -2,8 +2,27 @@
   background-color: $base-white;
 }
 
-.features__wrapper {}
-.features__title {}
-.features__subtitle {}
-.features__list {}
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.features__title {
+  margin-bottom: 4px;
+}
+
+.features__subtitle {
+  margin-bottom: 36px;
+}
+
+.features__list {
+  display: grid;
+  row-gap: 32px;
+  @include list-default;
+}
+
 .features__item {}
