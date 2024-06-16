@@ -1,3 +1,5 @@
 .primary-title {
+  margin: 0;
+
   @include font-set(700, 24px, 36px);
 }

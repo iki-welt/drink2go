@@ -6,8 +6,31 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  &--is-open {
+    position: absolute;
+    left: 0px;
+    display: flex;
+    width: 100%;
+
+    display: block;
+    background-color: $base-white;
+  }
 }
-.site-menu__item {}
+.site-menu__item {
+  display: flex;
+  flex-grow: 1;
+  border-top: 1px solid $base-secondary-color;
+  &:last-child {
+    border-bottom: 1px solid $base-secondary-color;
+  }
+}
+
 .site-menu__link {
+  flex-grow: 1;
+  padding: 20px 0;
   color: $base-black;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
 }

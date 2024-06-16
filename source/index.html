@@ -57,16 +57,16 @@
         </ul>
         <ul class="main-nav__site-menu site-menu">
           <li class="site-menu__item">
-            <a class="site-menu__link primary-text" href="index.html" aria-current="page">Главная</a>
+            <a class="site-menu__link sublist-text" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link primary-text" href="404.html">Каталог</a>
+            <a class="site-menu__link sublist-text" href="404.html">Каталог</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link primary-text" href="404.html">Доставка</a>
+            <a class="site-menu__link sublist-text" href="404.html">Доставка</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link primary-text" href="404.html">О нас</a>
+            <a class="site-menu__link sublist-text" href="404.html">О нас</a>
           </li>
         </ul>
       </nav>
@@ -78,7 +78,7 @@
       <div class="hero__wrapper container">
         <h2 class="visually-hidden">Специальное предложение</h2>
         <div class="hero__slider slider">
-          <button class="slider__prev-button slider-button-prev" type="button">
+          <button class="slider__button slider-button-prev" type="button">
             <span class="visually-hidden">Предыдущее предложение</span>
           </button>
           <div class="slider__current-slide">
@@ -106,20 +106,22 @@
               <p class="slider__slide-description primary-text">Свежесваренный кофе без кофеина из Эфиопии с натуральным
                 фермерским
                 молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-              <dl class="slider__slide-prices">
-                <div class="slider__regular-price">
-                  <dt class="visually-hidden">Цена без скидки</dt>
-                  <dd class="slider__regular-price-value">295₽</dd>
-                </div>
-                <div class="slider__special-price primary-price">
-                  <dt class="visually-hidden">Цена со скидкой</dt>
-                  <dd class="slider__special-price-value">225₽</dd>
-                </div>
-              </dl>
-              <a class="slider__slide-order-button primary-button" href="404.html">Заказать</a>
+              <div class="slider__sell-wrapper">
+                <dl class="slider__slide-prices">
+                  <div class="slider__regular-price">
+                    <dt class="visually-hidden">Цена без скидки</dt>
+                    <dd class="slider__regular-price-value">295₽</dd>
+                  </div>
+                  <div class="slider__special-price primary-price">
+                    <dt class="visually-hidden">Цена со скидкой</dt>
+                    <dd class="slider__special-price-value">225₽</dd>
+                  </div>
+                </dl>
+                <a class="slider__slide-order-button primary-button" href="404.html">Заказать</a>
+              </div>
             </div>
           </div>
-          <button class="slider__next-button slider-button-next" type="button">
+          <button class="slider__button slider__button--next slider-button-next" type="button">
             <span class="visually-hidden">Следующее предложение</span>
           </button>
           <ol class="slider__pagination-list slider-pagination">
