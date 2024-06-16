@@ -2,5 +2,12 @@
   background-color: $base-white;
 }
 
-.header__wrapper {}
-.header__logo {}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+.header__logo {
+  flex-shrink: 0;
+}

@@ -1,3 +1,13 @@
-.site-menu {}
+.site-menu {
+  display: none;
+
+  @include list-default;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
 .site-menu__item {}
-.site-menu__link {}
+.site-menu__link {
+  color: $base-black;
+}
