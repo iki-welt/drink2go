@@ -15,17 +15,19 @@
   }
 
   &--speed::before {
-    background-image: url(../../icons/feature-speed.svg);
+    background-image: url("../../icons/feature-speed.svg");
   }
 
   &--fit::before {
-    background-image: url(../../icons/feature-fit.svg);
+    background-image: url("../../icons/feature-fit.svg");
   }
+
   &--energy::before {
-    background-image: url(../../icons/feature-energy.svg);
+    background-image: url("../../icons/feature-energy.svg");
   }
+
   &--ecology::before {
-    background-image: url(../../icons/feature-ecology.svg);
+    background-image: url("../../icons/feature-ecology.svg");
   }
 }
 

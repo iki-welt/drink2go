@@ -11,7 +11,7 @@
 
 .slider__button {
   background-color: transparent;
-  background-image: url(../../icons/slider-arrow.svg);
+  background-image: url("../../icons/slider-arrow.svg");
   background-size: 11px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -81,6 +81,7 @@
   margin: 0;
   color: $base-primary-color;
   text-decoration: line-through;
+
   @include font-set(400, 16px, 32px);
 }
 
@@ -101,5 +102,5 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    }
+  }
 }

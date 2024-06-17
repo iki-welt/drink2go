@@ -3,15 +3,39 @@
 }
 
 .footer__wrapper {}
-.footer__base-wrapper {}
-.footer__logo {}
+
+.footer__base-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(0 - (100vw - $mobile-width) / 2);
+    display: block;
+    height: 1px;
+    width: 100vw;
+    background-color: $base-secondary-color;
+  }
+}
+
+.footer__logo {
+}
+
 .footer__social {}
+
 .footer__navigation-list {}
+
 .footer__navigation-item {}
+
 .footer__developer-wrapper {}
+
 .footer__developer-text {
   color: $base-shade;
 
   @include font-set(400, 12px, 16px);
 }
+
 .footer__developer-link {}

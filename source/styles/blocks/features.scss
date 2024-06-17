@@ -22,6 +22,7 @@
 .features__list {
   display: grid;
   row-gap: 32px;
+
   @include list-default;
 }
 

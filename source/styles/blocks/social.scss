@@ -1,3 +1,27 @@
-.social {}
-.social__item {}
-.social__link {}
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @include list-default;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  color: $base-shade;
+
+  &:hover,
+  &:focus {
+    background-color: $base-secondary-color;
+    color: $base-primary-color;
+  }
+
+  &:active {
+    background-color: $primary-opacity-color;
+    color: $base-primary-color;
+  }
+}
