@@ -1,9 +1,17 @@
-.footer-sublist {}
+.footer-sublist {
+  padding: 20px 0 28px;
+}
+.footer-sublist__title {
+  margin-bottom: 12px;
+}
+.footer-sublist__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
-.footer-sublist__title {}
+  @include list-default;
+}
 
-.footer-sublist__list {}
-
-.footer-sublist__item {}
-
-.footer-sublist__link {}
+.footer-sublist__link {
+  padding: 8px 0;
+}

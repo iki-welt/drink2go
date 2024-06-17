@@ -5,32 +5,27 @@
 .footer__wrapper {}
 
 .footer__base-wrapper {
-  position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: calc(0 - (100vw - $mobile-width) / 2);
-    display: block;
-    height: 1px;
-    width: 100vw;
-    background-color: $base-secondary-color;
-  }
+  padding: 22px 0;
 }
 
 .footer__logo {
+  flex-shrink: 0;
+  margin-right: 20px;
 }
-
 .footer__social {}
 
-.footer__navigation-list {}
+.footer__navigation-list {
+  @include list-default;
+}
 
-.footer__navigation-item {}
+// .footer__navigation-item {}
 
-.footer__developer-wrapper {}
+.footer__developer-wrapper {
+  padding: 20px 0 30px;
+  text-align: center;
+}
 
 .footer__developer-text {
   color: $base-shade;
