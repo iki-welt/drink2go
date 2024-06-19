@@ -1,0 +1,23 @@
+.contacts-list__item {}
+.contacts-list__contact {
+  display: flex;
+  gap: 6px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 16px;
+    margin-top: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--address::before {
+    background-image: url(../../icons/address.svg);
+  }
+
+  &--call::before {
+    background-image: url(../../icons/phone.svg);
+  }
+}

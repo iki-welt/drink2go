@@ -1,9 +1,18 @@
-.filters-form {}
+.filters-form {
+}
 
-.filters-form__list {}
+.filters-form__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 
-.filters-form__item {}
+  @include list-default;
+}
 
-.filters-form__set {}
-
-.filters-form__button {}
+.filters-form__item {
+  &--buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -81,7 +81,7 @@
           <button class="slider__button slider-button-prev" type="button">
             <span class="visually-hidden">Предыдущее предложение</span>
           </button>
-          <div class="slider__current-slide">
+          <div class="slider__slide slider__slide--current">
             <div class="slider__pic-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -115,6 +115,82 @@
                   <div class="slider__special-price primary-price">
                     <dt class="visually-hidden">Цена со скидкой</dt>
                     <dd class="slider__special-price-value">225₽</dd>
+                  </div>
+                </dl>
+                <a class="slider__slide-order-button primary-button" href="404.html">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <div class="slider__pic-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/promo-desktop2@1x.webp 1x, images/promo-desktop2@2x.webp 2x" width="600" height="600">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/promo-tablet2@1x.webp 1x, images/promo-tablet2@2x.webp 2x" width="476" height="476">
+                <source type="image/webp" srcset="images/promo-mobile1@1x.webp 1x, images/promo-mobile1@2x.webp 2x"
+                  width="280" height="280">
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="images/promo-desktop2@1x.png 1x, images/promo-desktop2@2x.png 2x" width="600" height="600">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/promo-tablet2@1x.png 1x, images/promo-tablet2@2x.png 2x" width="476" height="476">
+                <img class="slider__pic" src="images/promo-mobile1@1x.png" srcset="images/promo-mobile1@2x.png 2x"
+                  width="280" height="280" alt="">
+              </picture>
+            </div>
+            <div class="slider__text-wrapper">
+              <p class="slider__label-new">
+                <strong class="accent-title">Новинка!</strong>
+              </p>
+              <h3 class="slider__slide-title primary-title">Лавандовый Латте</h3>
+              <p class="slider__slide-description primary-text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <div class="slider__sell-wrapper">
+                <dl class="slider__slide-prices">
+                  <div class="slider__regular-price">
+                    <dt class="visually-hidden">Цена без скидки</dt>
+                    <dd class="slider__regular-price-value">285₽</dd>
+                  </div>
+                  <div class="slider__special-price primary-price">
+                    <dt class="visually-hidden">Цена со скидкой</dt>
+                    <dd class="slider__special-price-value">265₽</dd>
+                  </div>
+                </dl>
+                <a class="slider__slide-order-button primary-button" href="404.html">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <div class="slider__pic-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/promo-desktop3@1x.webp 1x, images/promo-desktop3@2x.webp 2x" width="600" height="600">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/promo-tablet3@1x.webp 1x, images/promo-tablet3@2x.webp 2x" width="476" height="476">
+                <source type="image/webp" srcset="images/promo-mobile3@1x.webp 1x, images/promo-mobile3@2x.webp 2x"
+                  width="280" height="280">
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="images/promo-desktop3@1x.png 1x, images/promo-desktop3@2x.png 2x" width="600" height="600">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/promo-tablet3@1x.png 1x, images/promo-tablet3@2x.png 2x" width="476" height="476">
+                <img class="slider__pic" src="images/promo-mobile1@1x.png" srcset="images/promo-mobile1@2x.png 2x"
+                  width="280" height="280" alt="">
+              </picture>
+            </div>
+            <div class="slider__text-wrapper">
+              <p class="slider__label-new">
+                <strong class="accent-title">Новинка!</strong>
+              </p>
+              <h3 class="slider__slide-title primary-title">Тройной Эспрессо</h3>
+              <p class="slider__slide-description primary-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+              <div class="slider__sell-wrapper">
+                <dl class="slider__slide-prices">
+                  <div class="slider__regular-price">
+                    <dt class="visually-hidden">Цена без скидки</dt>
+                    <dd class="slider__regular-price-value">395₽</dd>
+                  </div>
+                  <div class="slider__special-price primary-price">
+                    <dt class="visually-hidden">Цена со скидкой</dt>
+                    <dd class="slider__special-price-value">375₽</dd>
                   </div>
                 </dl>
                 <a class="slider__slide-order-button primary-button" href="404.html">Заказать</a>
@@ -193,11 +269,11 @@
                 <div class="filter__price-range">
                   <label class="filter__field">
                     <span class="visually-hidden">Минимальная цена</span>
-                    <input class="filter__field-inp" type="number" name="min-price" min="0" max="99999" placeholder="0">
+                    <input class="filter__field-inp filter__field-inp--range" type="number" name="min-price" min="0" max="9999" placeholder="0">
                   </label>
                   <label class="filter__field">
                     <span class="visually-hidden">Максимальная цена</span>
-                    <input class="filter__field-inp" type="number" name="max-price" min="0" max="99999"
+                    <input class="filter__field-inp filter__field-inp--range" type="number" name="max-price" min="0" max="9999"
                       placeholder="900">
                   </label>
                 </div>
@@ -209,33 +285,30 @@
                 <ul class="filter__list">
                   <li class="filter__item">
                     <label class="filter__field">
-                      <span class="filter__field-mark"></span>
+                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type" value="any" checked>
+                      <span class="filter__field-mark filter__field-mark--radio"></span>
                       <span class="filter__field-name primary-text">Неважно</span>
-                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type" value="any"
-                        checked>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__field">
-                      <span class="filter__field-mark"></span>
-                      <span class="filter__field-name primary-text">Только животное</span>
                       <input class="filter__field-inp visually-hidden" type="radio" name="milk-type" value="dairy">
+                      <span class="filter__field-mark filter__field-mark--radio"></span>
+                      <span class="filter__field-name primary-text">Только животное</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__field">
-                      <span class="filter__field-mark"></span>
+                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type" value="plant-based">
+                      <span class="filter__field-mark filter__field-mark--radio"></span>
                       <span class="filter__field-name primary-text">Только растительное</span>
-                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type"
-                        value="plant-based">
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__field">
-                      <span class="filter__field-mark"></span>
+                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type" value="without-milk" disabled>
+                      <span class="filter__field-mark filter__field-mark--radio"></span>
                       <span class="filter__field-name primary-text">Без молока</span>
-                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type"
-                        value="without-milk" disabled>
                     </label>
                   </li>
                 </ul>
@@ -247,47 +320,47 @@
                 <ul class="filter__list">
                   <li class="filter__item">
                     <label class="filter__field">
-                      <span class="filter__field-mark"></span>
-                      <span class="filter__field-name primary-text">Бразилия</span>
                       <input class="filter__field-inp visually-hidden" type="checkbox" name="origin-brazil" checked>
+                      <span class="filter__field-mark filter__field-mark--checkbox"></span>
+                      <span class="filter__field-name primary-text">Бразилия</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__field">
-                      <span class="filter__field-mark"></span>
-                      <span class="filter__field-name primary-text">Эфиопия</span>
                       <input class="filter__field-inp visually-hidden" type="checkbox" name="origin-ethiopia">
+                      <span class="filter__field-mark filter__field-mark--checkbox"></span>
+                      <span class="filter__field-name primary-text">Эфиопия</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__field">
-                      <span class="filter__field-mark"></span>
-                      <span class="filter__field-name primary-text">Колумбия</span>
                       <input class="filter__field-inp visually-hidden" type="checkbox" name="origin-colombia">
+                      <span class="filter__field-mark filter__field-mark--checkbox"></span>
+                      <span class="filter__field-name primary-text">Колумбия</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__field">
-                      <span class="filter__field-mark"></span>
-                      <span class="filter__field-name primary-text">Коста-Рика</span>
                       <input class="filter__field-inp visually-hidden" type="checkbox" name="origin-costa-rica">
+                      <span class="filter__field-mark filter__field-mark--checkbox"></span>
+                      <span class="filter__field-name primary-text">Коста-Рика</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__field">
-                      <span class="filter__field-mark"></span>
-                      <span class="filter__field-name primary-text">Перу</span>
                       <input class="filter__field-inp visually-hidden" type="checkbox" name="origin-peru" disabled>
+                      <span class="filter__field-mark filter__field-mark--checkbox"></span>
+                      <span class="filter__field-name primary-text">Перу</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
             </li>
+            <li class="filters-form__item filters-form__item--buttons">
+                <button class="filters-form__button primary-button" type="submit">Применить</button>
+                <button class="filters-form__button primary-button primary-button--alt-colors" type="reset">Сбросить</button>
+            </li>
           </ul>
-          <div class="filters-form__set">
-            <button class="filters-form__button primary-button" type="submit">Применить</button>
-            <button class="filters-form__button secondary-button" type="reset">Сбросить</button>
-          </div>
         </form>
         <div class="catalog__sort-wrapper">
           <label class="catalog__sort-title accent-text">Сортировка:</label>
@@ -500,17 +573,19 @@
           <h2 class="footer-sublist__title accent-title">Контакты</h2>
           <ul class="footer-sublist__list contacts-list">
             <li class="contacts-list__item">
-              <span class="contacts-list__address primary-text">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+              <span class="contacts-list__contact contacts-list__contact--address primary-text">Санкт-Петербург, набережная реки Карповки, дом 5</span>
             </li>
             <li class="contacts-list__item">
-              <a class="contacts-list__call primary-text" href="tel:+79999999999">+7 (999) 999-99-99</a>
+              <a class="contacts-list__contact contacts-list__contact--call primary-text" href="tel:+79999999999">+7 (999) 999-99-99</a>
             </li>
           </ul>
         </li>
       </ul>
       <div class="footer__developer-wrapper">
         <p class="footer__developer-text">Разработано в
-          <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span>HTML Academy</span>
+            <svg width="12" height="16" viewBox="0 0 12 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m11.22 5.75-5.25-3.25-5.19 3.25v-4.34l5.22-.58 5.22.58v4.34Zm0 .58-2.1 1.3-3.14-1.97v.57l2.68 1.68-.46.29-2.22-1.4v.58l1.75 1.1-.41.29h-.01l-1.33-.82v.58l.87.53-.89.56-5.16-3.23 5.17-3.28 5.24 3.22Zm0 5.44-5.22 3.27-5.22-3.27v-4.74l5.2 3.25v.59l-3.56-2.23v.57l3.58 2.26v.6l-3.57-2.23v.57l3.57 2.26 3.6-2.27v-2.44l1.62-1.01v4.82Zm-5.22-11.77-6 .66v11.58l6 3.76 6-3.76v-11.58l-6-.66Z"/></svg>
           </a>
         </p>
       </div>

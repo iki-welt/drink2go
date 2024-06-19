@@ -1,18 +1,126 @@
 .filter {}
 
-.filter__title {}
+.filter__title {
+  margin-bottom: 20px;
+}
 
-.filter__set {}
+.filter__set {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 
-.filter__price-range {}
+.filter__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 
-.filter__field {}
+  @include list-default;
+}
 
-.filter__field-mark {}
+.filter__price-range {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+
+  & .filter__field:last-child::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, 50%);
+    right: 50%;
+    display: block;
+    width: 8px;
+    height: 2px;
+    background-color: $base-shade;
+  }
+}
+
+.filter__field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter__field-mark {
+  position: relative;
+  height: 24px;
+  border-radius: 12px;
+
+  &--radio {
+    width: 24px;
+    background-color: $base-white;
+    border: 2px solid $base-shade;
+  }
+
+  &--checkbox {
+    width: 42px;
+    background-color: $base-shade;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(2px, -50%);
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: $base-white;
+      border-radius: 50%;
+    }
+  }
+}
 
 .filter__field-name {
   font-size: 14px;
   line-height: 20px;
 }
 
-.filter__field-inp {}
+.filter__field-inp {
+  &--range {
+    width: 100%;
+    padding: 8px 10px;
+    color: $base-black;
+    font-family: $primary-font;
+    text-align: center;
+    background-color: $base-white;
+    border: 2px solid $base-primary-color;
+    border-radius: 4px;
+
+    @include font-set(500, 16px, 24px);
+  }
+
+  &[type="radio"]:checked + .filter__field-mark {
+    &--radio {
+      border-color: $base-primary-color;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $base-primary-color;
+      }
+    }
+  }
+
+  &[type="checkbox"]:checked + .filter__field-mark {
+    &--checkbox {
+      background-color: $base-primary-color;
+      border-color: $base-primary-color;
+
+      &::before {
+        left: unset;
+        right: 0;
+        transform: translate(-2px, -50%);
+      }
+    }
+  }
+}

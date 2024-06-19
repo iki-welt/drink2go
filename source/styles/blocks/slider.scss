@@ -22,11 +22,15 @@
   }
 }
 
-.slider__current-slide {
-  display: flex;
+.slider__slide {
+  display: none;
   flex-direction: column;
   margin: 20px 0 60px;
   text-align: center;
+
+  &--current {
+    display: flex;
+  }
 }
 
 .slider__pic-wrapper {

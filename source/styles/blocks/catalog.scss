@@ -4,11 +4,19 @@
 
 .catalog__wrapper {}
 
-.catalog__title {}
+.catalog__title {
+  margin-bottom: 4px;
+  text-align: center;
+}
 
-.catalog__subtitle {}
+.catalog__subtitle {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-.catalog__filters {}
+.catalog__filters {
+  margin-bottom: 40px;
+}
 
 .catalog__sort-wrapper {}
 

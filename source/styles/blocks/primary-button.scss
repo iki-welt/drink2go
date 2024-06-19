@@ -1,5 +1,6 @@
 .primary-button {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 8px 20px;
   color: $base-white;
@@ -9,4 +10,9 @@
   border-radius: 4px;
 
   @include font-set(400, 16px, 24px);
+
+  &--alt-colors {
+    color: $base-primary-color;
+    background-color: $base-white;
+  }
 }
