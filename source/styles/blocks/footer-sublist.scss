@@ -1,5 +1,13 @@
 .footer-sublist {
   padding: 20px 0 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
 }
 
 .footer-sublist__title {
