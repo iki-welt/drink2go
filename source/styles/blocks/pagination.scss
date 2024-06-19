@@ -1,5 +1,43 @@
-.pagination {}
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include list-default;
+}
 
-.pagination__item {}
+.pagination__item {
+  min-width: 40px;
+  min-height: 40px;
+}
 
-.pagination__link {}
+.pagination__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  color: $base-primary-color;
+  background-color: $base-white;
+  border-radius: 4px;
+
+  &--current {
+    color: $base-black;
+    font-weight: 600;
+    background-color: $lightest-bg;
+  }
+
+  &--arrow {
+    background-image: url(../../icons/pagination-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 10px 6px;
+    background-position: center;
+  }
+
+  &--next {
+    transform: scaleX(-1);
+  }
+}
+
+.pagination__mark {
+  display: none;
+}

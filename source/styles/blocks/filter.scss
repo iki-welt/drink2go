@@ -92,7 +92,7 @@
     @include font-set(500, 16px, 24px);
   }
 
-  &[type="radio"]:checked + .filter__field-mark {
+  &[type="radio"]:checked+.filter__field-mark {
     &--radio {
       border-color: $base-primary-color;
 
@@ -111,7 +111,7 @@
     }
   }
 
-  &[type="checkbox"]:checked + .filter__field-mark {
+  &[type="checkbox"]:checked+.filter__field-mark {
     &--checkbox {
       background-color: $base-primary-color;
       border-color: $base-primary-color;

@@ -39,8 +39,7 @@
           <li class="user-menu__item">
             <a class="user-menu__link" href="404.html">
               <span class="visually-hidden">Корзина</span>
-              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="m5.66 3.88.23 2.79h4.22l.23-2.8a2.35 2.35 0 1 0-4.68 0Zm5.78 2.79.23-2.68a3.68 3.68 0 1 0-7.34 0l.23 2.68h-4.56l.19 1.33.82 5.71a2.67 2.67 0 0 0 2.64 2.29h8.7c1.33 0 2.46-.98 2.64-2.29l.82-5.71.19-1.33h-4.55Zm-.1 1.33h-.06l-.22 2.67h3.02l.38-2.67h-3.13Zm-1.4 0h-3.88l.22 2.67h3.44l.22-2.67Zm-5.22 0h-3.18l.38 2.67h3.02l-.22-2.67Zm1.9 6.67-.23-2.67h3.22l-.22 2.67h-2.78Zm4.33-2.67-.23 2.67h1.63c.67 0 1.23-.5 1.32-1.15l.22-1.52h-2.94Zm-5.9 0 .23 2.67h-1.63c-.67 0-1.23-.5-1.32-1.15l-.22-1.52h2.94Z" />
               </svg>
@@ -81,7 +80,7 @@
           <button class="slider__button slider-button-prev" type="button">
             <span class="visually-hidden">Предыдущее предложение</span>
           </button>
-          <div class="slider__slide slider__slide--current">
+          <div class="slider__slide slider__slide--first-bg slider__slide--current">
             <div class="slider__pic-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -121,7 +120,7 @@
               </div>
             </div>
           </div>
-          <div class="slider__slide">
+          <div class="slider__slide slider__slide--second-bg">
             <div class="slider__pic-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -143,7 +142,8 @@
                 <strong class="accent-title">Новинка!</strong>
               </p>
               <h3 class="slider__slide-title primary-title">Лавандовый Латте</h3>
-              <p class="slider__slide-description primary-text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <p class="slider__slide-description primary-text">Невероятное сочетание перуанской высокогорной арабики с
+                молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
               <div class="slider__sell-wrapper">
                 <dl class="slider__slide-prices">
                   <div class="slider__regular-price">
@@ -159,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="slider__slide">
+          <div class="slider__slide slider__slide--third-bg">
             <div class="slider__pic-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -181,7 +181,8 @@
                 <strong class="accent-title">Новинка!</strong>
               </p>
               <h3 class="slider__slide-title primary-title">Тройной Эспрессо</h3>
-              <p class="slider__slide-description primary-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+              <p class="slider__slide-description primary-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот
+                тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
               <div class="slider__sell-wrapper">
                 <dl class="slider__slide-prices">
                   <div class="slider__regular-price">
@@ -269,12 +270,13 @@
                 <div class="filter__price-range">
                   <label class="filter__field">
                     <span class="visually-hidden">Минимальная цена</span>
-                    <input class="filter__field-inp filter__field-inp--range" type="number" name="min-price" min="0" max="9999" placeholder="0">
+                    <input class="filter__field-inp filter__field-inp--range" type="number" name="min-price" min="0"
+                      max="9999" placeholder="0">
                   </label>
                   <label class="filter__field">
                     <span class="visually-hidden">Максимальная цена</span>
-                    <input class="filter__field-inp filter__field-inp--range" type="number" name="max-price" min="0" max="9999"
-                      placeholder="900">
+                    <input class="filter__field-inp filter__field-inp--range" type="number" name="max-price" min="0"
+                      max="9999" placeholder="900">
                   </label>
                 </div>
               </fieldset>
@@ -285,7 +287,8 @@
                 <ul class="filter__list">
                   <li class="filter__item">
                     <label class="filter__field">
-                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type" value="any" checked>
+                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type" value="any"
+                        checked>
                       <span class="filter__field-mark filter__field-mark--radio"></span>
                       <span class="filter__field-name primary-text">Неважно</span>
                     </label>
@@ -299,14 +302,16 @@
                   </li>
                   <li class="filter__item">
                     <label class="filter__field">
-                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type" value="plant-based">
+                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type"
+                        value="plant-based">
                       <span class="filter__field-mark filter__field-mark--radio"></span>
                       <span class="filter__field-name primary-text">Только растительное</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__field">
-                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type" value="without-milk" disabled>
+                      <input class="filter__field-inp visually-hidden" type="radio" name="milk-type"
+                        value="without-milk" disabled>
                       <span class="filter__field-mark filter__field-mark--radio"></span>
                       <span class="filter__field-name primary-text">Без молока</span>
                     </label>
@@ -357,17 +362,20 @@
               </fieldset>
             </li>
             <li class="filters-form__item filters-form__item--buttons">
-                <button class="filters-form__button primary-button" type="submit">Применить</button>
-                <button class="filters-form__button primary-button primary-button--alt-colors" type="reset">Сбросить</button>
+              <button class="filters-form__button primary-button" type="submit">Применить</button>
+              <button class="filters-form__button primary-button primary-button--alt-colors"
+                type="reset">Сбросить</button>
             </li>
           </ul>
         </form>
-        <div class="catalog__sort-wrapper">
-          <label class="catalog__sort-title accent-text">Сортировка:</label>
+        <label class="catalog__sort-wrapper">
+          <span class="catalog__sort-title accent-text">
+            Сортировка:
+          </span>
           <select class="catalog__sorter">
             <option>по умолчанию</option>
           </select>
-        </div>
+        </label>
         <ul class="catalog__list">
           <li class="catalog__item product">
             <div class="product__pic-wrapper">
@@ -467,14 +475,15 @@
         </ul>
         <ul class="catalog__pagination pagination">
           <li class="pagination__item">
-            <a class="pagination__link secondary-button" href="404.html"><span class="pagination__mark">Назад</span></a>
+            <a class="pagination__link pagination__link--arrow secondary-button" href="404.html"><span
+                class="pagination__mark">Назад</span></a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link secondary-button" href="404.html"><span
                 class="visually-hidden">Страница</span>1</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link secondary-button" href="404.html"><span
+            <a class="pagination__link pagination__link--current secondary-button" href="404.html"><span
                 class="visually-hidden">Страница</span>2</a>
           </li>
           <li class="pagination__item">
@@ -482,8 +491,8 @@
                 class="visually-hidden">Страница</span>3</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link secondary-button" href="404.html"><span
-                class="pagination__mark">Вперёд</span></a>
+            <a class="pagination__link pagination__link--arrow pagination__link--next secondary-button"
+              href="404.html"><span class="pagination__mark">Вперёд</span></a>
           </li>
         </ul>
       </div>
@@ -520,19 +529,28 @@
           <li class="social__item">
             <a class="social__link" href="404.html">
               <span class="visually-hidden">Drink2Go в 'VK'</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.4 1.4c-1.4 1.41-1.4 3.67-1.4 8.2v.8c0 4.53 0 6.79 1.4 8.2 1.41 1.4 3.67 1.4 8.2 1.4h.8c4.53 0 6.79 0 8.2-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.8c0-4.53 0-6.79-1.4-8.2-1.41-1.4-3.67-1.4-8.2-1.4h-.8c-4.53 0-6.79 0-8.2 1.4Zm1.98 4.68c.1 5.2 2.7 8.33 7.26 8.33h.26v-2.98a4.11 4.11 0 0 1 3.45 2.98h2.37a6.58 6.58 0 0 0-3.43-4.18 6.35 6.35 0 0 0 2.93-4.15h-2.15c-.47 1.65-1.85 3.15-3.17 3.3v-3.3h-2.15v5.77c-1.33-.33-3.02-1.95-3.1-5.77h-2.27Z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.4 1.4c-1.4 1.41-1.4 3.67-1.4 8.2v.8c0 4.53 0 6.79 1.4 8.2 1.41 1.4 3.67 1.4 8.2 1.4h.8c4.53 0 6.79 0 8.2-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.8c0-4.53 0-6.79-1.4-8.2-1.41-1.4-3.67-1.4-8.2-1.4h-.8c-4.53 0-6.79 0-8.2 1.4Zm1.98 4.68c.1 5.2 2.7 8.33 7.26 8.33h.26v-2.98a4.11 4.11 0 0 1 3.45 2.98h2.37a6.58 6.58 0 0 0-3.43-4.18 6.35 6.35 0 0 0 2.93-4.15h-2.15c-.47 1.65-1.85 3.15-3.17 3.3v-3.3h-2.15v5.77c-1.33-.33-3.02-1.95-3.1-5.77h-2.27Z" />
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="404.html">
               <span class="visually-hidden">Drink2Go в 'Pinterest'</span>
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11 0a11 11 0 0 0-4 21.25c-.1-.87-.2-2.21.03-3.16l1.29-5.47s-.33-.66-.33-1.63c0-1.53.89-2.67 2-2.67.93 0 1.38.7 1.38 1.54 0 .95-.6 2.36-.9 3.67-.27 1.1.54 1.99 1.62 1.99 1.96 0 3.46-2.07 3.46-5.04 0-2.64-1.9-4.48-4.6-4.48a4.76 4.76 0 0 0-4.96 4.78c0 .94.36 1.96.82 2.5.09.12.1.21.07.32l-.3 1.25c-.05.2-.16.24-.37.15-1.38-.64-2.23-2.65-2.23-4.26 0-3.47 2.52-6.66 7.26-6.66 3.82 0 6.78 2.72 6.78 6.35 0 3.8-2.39 6.84-5.7 6.84-1.12 0-2.17-.58-2.52-1.26l-.69 2.62a12.3 12.3 0 0 1-1.37 2.88 11 11 0 1 0 3.26-21.51Z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 0a11 11 0 0 0-4 21.25c-.1-.87-.2-2.21.03-3.16l1.29-5.47s-.33-.66-.33-1.63c0-1.53.89-2.67 2-2.67.93 0 1.38.7 1.38 1.54 0 .95-.6 2.36-.9 3.67-.27 1.1.54 1.99 1.62 1.99 1.96 0 3.46-2.07 3.46-5.04 0-2.64-1.9-4.48-4.6-4.48a4.76 4.76 0 0 0-4.96 4.78c0 .94.36 1.96.82 2.5.09.12.1.21.07.32l-.3 1.25c-.05.2-.16.24-.37.15-1.38-.64-2.23-2.65-2.23-4.26 0-3.47 2.52-6.66 7.26-6.66 3.82 0 6.78 2.72 6.78 6.35 0 3.8-2.39 6.84-5.7 6.84-1.12 0-2.17-.58-2.52-1.26l-.69 2.62a12.3 12.3 0 0 1-1.37 2.88 11 11 0 1 0 3.26-21.51Z" />
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="404.html">
               <span class="visually-hidden">Drink2Go в 'Одноклассники'</span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.4 1.4c-1.4 1.41-1.4 3.67-1.4 8.2v.91c0 4.46 0 6.7 1.4 8.09 1.41 1.4 3.67 1.4 8.2 1.4h.91c4.46 0 6.7 0 8.09-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.91c0-4.46 0-6.7-1.4-8.09-1.41-1.4-3.67-1.4-8.2-1.4h-.91c-4.46 0-6.7 0-8.09 1.4Zm8.62 8.8a3.03 3.03 0 1 0-.01-6.07 3.03 3.03 0 0 0 0 6.07Zm0-4.28a1.25 1.25 0 0 1 0 2.5c-.69 0-1.25-.56-1.25-1.25a1.23 1.23 0 0 1 1.25-1.25Zm1.21 6.76a5.73 5.73 0 0 0 1.76-.72.88.88 0 0 0 .28-1.24.88.88 0 0 0-1.24-.27 3.85 3.85 0 0 1-4.08 0 .9.9 0 0 0-1.23.27.9.9 0 0 0 .3 1.22 5.8 5.8 0 0 0 1.77.72l-1.69 1.69a.89.89 0 0 0 0 1.25c.18.18.4.25.63.25.24 0 .46-.09.64-.25l1.67-1.67 1.67 1.67a.89.89 0 0 0 1.25-1.25l-1.73-1.67Z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.4 1.4c-1.4 1.41-1.4 3.67-1.4 8.2v.91c0 4.46 0 6.7 1.4 8.09 1.41 1.4 3.67 1.4 8.2 1.4h.91c4.46 0 6.7 0 8.09-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.91c0-4.46 0-6.7-1.4-8.09-1.41-1.4-3.67-1.4-8.2-1.4h-.91c-4.46 0-6.7 0-8.09 1.4Zm8.62 8.8a3.03 3.03 0 1 0-.01-6.07 3.03 3.03 0 0 0 0 6.07Zm0-4.28a1.25 1.25 0 0 1 0 2.5c-.69 0-1.25-.56-1.25-1.25a1.23 1.23 0 0 1 1.25-1.25Zm1.21 6.76a5.73 5.73 0 0 0 1.76-.72.88.88 0 0 0 .28-1.24.88.88 0 0 0-1.24-.27 3.85 3.85 0 0 1-4.08 0 .9.9 0 0 0-1.23.27.9.9 0 0 0 .3 1.22 5.8 5.8 0 0 0 1.77.72l-1.69 1.69a.89.89 0 0 0 0 1.25c.18.18.4.25.63.25.24 0 .46-.09.64-.25l1.67-1.67 1.67 1.67a.89.89 0 0 0 1.25-1.25l-1.73-1.67Z" />
+              </svg>
             </a>
           </li>
         </ul>
@@ -573,10 +591,12 @@
           <h2 class="footer-sublist__title accent-title">Контакты</h2>
           <ul class="footer-sublist__list contacts-list">
             <li class="contacts-list__item">
-              <span class="contacts-list__contact contacts-list__contact--address primary-text">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+              <span class="contacts-list__contact contacts-list__contact--address primary-text">Санкт-Петербург,
+                набережная реки Карповки, дом 5</span>
             </li>
             <li class="contacts-list__item">
-              <a class="contacts-list__contact contacts-list__contact--call primary-text" href="tel:+79999999999">+7 (999) 999-99-99</a>
+              <a class="contacts-list__contact contacts-list__contact--call primary-text" href="tel:+79999999999">+7
+                (999) 999-99-99</a>
             </li>
           </ul>
         </li>
@@ -585,7 +605,10 @@
         <p class="footer__developer-text">Разработано в
           <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span>HTML Academy</span>
-            <svg width="12" height="16" viewBox="0 0 12 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m11.22 5.75-5.25-3.25-5.19 3.25v-4.34l5.22-.58 5.22.58v4.34Zm0 .58-2.1 1.3-3.14-1.97v.57l2.68 1.68-.46.29-2.22-1.4v.58l1.75 1.1-.41.29h-.01l-1.33-.82v.58l.87.53-.89.56-5.16-3.23 5.17-3.28 5.24 3.22Zm0 5.44-5.22 3.27-5.22-3.27v-4.74l5.2 3.25v.59l-3.56-2.23v.57l3.58 2.26v.6l-3.57-2.23v.57l3.57 2.26 3.6-2.27v-2.44l1.62-1.01v4.82Zm-5.22-11.77-6 .66v11.58l6 3.76 6-3.76v-11.58l-6-.66Z"/></svg>
+            <svg width="12" height="16" viewBox="0 0 12 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m11.22 5.75-5.25-3.25-5.19 3.25v-4.34l5.22-.58 5.22.58v4.34Zm0 .58-2.1 1.3-3.14-1.97v.57l2.68 1.68-.46.29-2.22-1.4v.58l1.75 1.1-.41.29h-.01l-1.33-.82v.58l.87.53-.89.56-5.16-3.23 5.17-3.28 5.24 3.22Zm0 5.44-5.22 3.27-5.22-3.27v-4.74l5.2 3.25v.59l-3.56-2.23v.57l3.58 2.26v.6l-3.57-2.23v.57l3.57 2.26 3.6-2.27v-2.44l1.62-1.01v4.82Zm-5.22-11.77-6 .66v11.58l6 3.76 6-3.76v-11.58l-6-.66Z" />
+            </svg>
           </a>
         </p>
       </div>

@@ -1,5 +1,6 @@
 .catalog {
   padding-top: 50px;
+  padding-bottom: 44px;
 }
 
 .catalog__wrapper {}
@@ -18,13 +19,50 @@
   margin-bottom: 40px;
 }
 
-.catalog__sort-wrapper {}
+.catalog__sort-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    display: block;
+    width: 10px;
+    height: 6px;
+    background-image: url(../../icons/select-arrow.svg);
+    background-size: 10px 6px;
+    background-repeat: no-repeat;
+  }
+}
 
 .catalog__sort-title {}
 
-.catalog__sorter {}
+.catalog__sorter {
+  width: 165px;
+  padding: 4px 30px 4px 10px;
+  border: none;
+  background-color: inherit;
+  color: $base-primary-color;
+  font-family: $primary-font;
+  appearance: none;
 
-.catalog__list {}
+  @include font-set (600, 16px, 24px);
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 0 0 44px;
+  padding: 0;
+  list-style: none;
+}
 
 .catalog__item {}
 

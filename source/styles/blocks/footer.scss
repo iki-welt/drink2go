@@ -14,17 +14,45 @@
   flex-shrink: 0;
   margin-right: 20px;
 }
+
 .footer__social {}
 
 .footer__navigation-list {
   @include list-default;
 }
 
-// .footer__navigation-item {}
+.footer__navigation-item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $base-secondary-color;
+    box-shadow: 100vw 0 0 $base-secondary-color;
+  }
+}
 
 .footer__developer-wrapper {
+  position: relative;
   padding: 20px 0 30px;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $base-secondary-color;
+    box-shadow: 100vw 0 0 $base-secondary-color;
+  }
 }
 
 .footer__developer-text {
