@@ -1,17 +1,29 @@
 .feature {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 52px 1fr;
+    gap: 10px 20px;
+  }
 
   &::before {
     content: "";
     display: block;
     width: 50px;
     height: 60px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
   }
 
   &--speed::before {
@@ -35,6 +47,16 @@
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    text-align: left;
+  }
 }
 
-.feature__description {}
+.feature__description {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    text-align: left;
+  }
+}

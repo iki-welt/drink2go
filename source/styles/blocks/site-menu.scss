@@ -4,7 +4,9 @@
   @include list-default;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 60px;
   }
 
   &--is-open {
@@ -25,6 +27,10 @@
   &:last-child {
     border-bottom: 1px solid $base-secondary-color;
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .site-menu__link {
@@ -34,4 +40,8 @@
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 20px;
+  }
 }

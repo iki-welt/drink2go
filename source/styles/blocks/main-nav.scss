@@ -1,8 +1,21 @@
 .main-nav {
   margin-right: -20px;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0;
+  }
 }
 
-.main-nav__user-menu {}
+.main-nav__user-menu {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
 
-.main-nav__site-menu {}
+.main-nav__site-menu {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}

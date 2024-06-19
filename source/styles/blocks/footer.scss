@@ -8,6 +8,10 @@
   display: flex;
   justify-content: space-between;
   padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 0 32px;
+  }
 }
 
 .footer__logo {
@@ -19,21 +23,29 @@
 
 .footer__navigation-list {
   @include list-default;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
 }
 
 .footer__navigation-item {
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 100vw;
-    height: 1px;
-    background-color: $base-secondary-color;
-    box-shadow: 100vw 0 0 $base-secondary-color;
+  @media (max-width: $mobile-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: $base-secondary-color;
+      box-shadow: 100vw 0 0 $base-secondary-color;
+    }
   }
 }
 
@@ -42,16 +54,22 @@
   padding: 20px 0 30px;
   text-align: center;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 100vw;
-    height: 1px;
-    background-color: $base-secondary-color;
-    box-shadow: 100vw 0 0 $base-secondary-color;
+  @media (max-width: $mobile-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: $base-secondary-color;
+      box-shadow: 100vw 0 0 $base-secondary-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 40px;
   }
 }
 

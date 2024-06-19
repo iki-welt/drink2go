@@ -6,6 +6,10 @@
   gap: 30px;
 
   @include list-default;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .filters-form__item {
@@ -13,5 +17,12 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1/-1;
+      width: fit-content;
+      justify-self: center;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }

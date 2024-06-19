@@ -2,4 +2,8 @@
   margin: 0;
 
   @include font-set(700, 24px, 36px);
+
+  @media (min-width: $tablet-width) {
+    @include font-set(700, 42px, 64px);
+  }
 }

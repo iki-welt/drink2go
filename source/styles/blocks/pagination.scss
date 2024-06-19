@@ -16,6 +16,7 @@
   align-items: center;
   min-width: 40px;
   min-height: 40px;
+  padding: 8px;
   color: $base-primary-color;
   background-color: $base-white;
   border-radius: 4px;
@@ -36,8 +37,23 @@
   &--next {
     transform: scaleX(-1);
   }
+
+  @media (min-width: $tablet-width) {
+    &--arrow {
+      padding: 8px 20px;
+      background-image: none;
+    }
+
+    &--next {
+      transform: none;
+    }
+  }
 }
 
 .pagination__mark {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
