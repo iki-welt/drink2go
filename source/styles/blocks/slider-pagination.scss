@@ -22,4 +22,16 @@
   &--current {
     background-color: $base-primary-color;
   }
+
+  &:hover {
+    background-color: $primary-opacity-color;
+  }
+
+  &:focus {
+    background-color: $primary-opacity-color;
+  }
+
+  &:active {
+    background-color: $base-primary-color;
+  }
 }

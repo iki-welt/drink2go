@@ -28,20 +28,36 @@
   }
 
   &--arrow {
-    background-image: url(../../icons/pagination-arrow.svg);
-    background-repeat: no-repeat;
-    background-size: 10px 6px;
-    background-position: center;
+
   }
 
   &--next {
     transform: scaleX(-1);
   }
 
+  &:hover {
+    color: $base-white;
+    background-color: $primary-lighter-color;
+  }
+
+  &:focus {
+    color: $base-white;
+    background-color: $primary-lighter-color;
+  }
+
+  &:active {
+    color: $base-white;
+    background-color: $primary-darker-color;
+  }
+
+  &:disabled {
+    color: $base-white;
+    background-color: $base-shade;
+  }
+
   @media (min-width: $tablet-width) {
-    &--arrow {
-      padding: 8px 20px;
-      background-image: none;
+    &--arrow svg {
+      display: none;
     }
 
     &--next {

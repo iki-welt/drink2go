@@ -24,4 +24,16 @@
 
 .footer-sublist__link {
   padding: 8px 0;
+
+  &:hover {
+    color: $primary-lighter-color;
+  }
+
+  &:focus {
+    color: $primary-lighter-color;
+  }
+
+  &:focus {
+    color: $primary-darker-color;
+  }
 }

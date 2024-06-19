@@ -11,8 +11,41 @@
 
   @include font-set(400, 16px, 24px);
 
+  &:hover {
+    color: $base-white;
+    background-color: $primary-lighter-color;
+  }
+
+  &:focus {
+    color: $base-white;
+    background-color: $primary-lighter-color;
+  }
+
+  &:active {
+    color: $base-white;
+    background-color: $primary-darker-color;
+  }
+
+  &:disabled {
+    color: $base-white;
+    background-color: $base-shade;
+  }
+
+  &--disabled {
+    color: $base-white;
+    background-color: $base-shade;
+  }
+
   &--alt-colors {
     color: $base-primary-color;
     background-color: $base-white;
+
+    &:disabled {
+      background-color: $primary-light-shade;
+    }
+
+    &.primary-button--disabled {
+      background-color: $primary-light-shade;
+    }
   }
 }

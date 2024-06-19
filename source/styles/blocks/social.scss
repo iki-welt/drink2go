@@ -13,4 +13,20 @@
   min-width: 40px;
   min-height: 40px;
   color: $base-shade;
+  border-radius: 4px;
+
+  &:hover {
+    color: $base-primary-color;
+    background-color: $base-secondary-color;
+  }
+
+  &:focus {
+    color: $base-primary-color;
+    background-color: $base-secondary-color;
+  }
+
+  &:active {
+    color: $base-primary-color;
+    background-color: $primary-opacity-color;
+  }
 }
